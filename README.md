@@ -4,7 +4,7 @@
 This is a short Python scripts I use to test the promotion json file.
 To insert the script-level comments as descriptions below.
 
-#Download the python
+# Download the python
 https://www.python.org/downloads/
 
 # Install the Python package
@@ -67,8 +67,21 @@ This is helpful to find the ID according to name and description.
 
 Tester needs to pass the name and description as input. 
 
+
 ### Usage
 Ensure `name` and `description` are correctly set below.
+
+Enter the input name is Gallery and Description is "Good position" which check in the api whether this conditions matches or not, if matches then answer the ID number.
+
+```buildoutcfg
+for example
+
+add the name are you looking?Gallery
+add the Description are you looking?Good position
+Required "Basic" and "Lowest position in category" is not found in ID1
+Required Gallery and Good position is found in ID 2
+Required "Feature" and "Better position in category" is not found in ID3
+```
 
 
 

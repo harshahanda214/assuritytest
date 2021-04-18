@@ -21,15 +21,15 @@ Run the pycharm-community-2021.1.exe
 Once the installation is done Pycharm is ready to create python project
 
 #Create a pyhton project
-Goto File menu and create a "New project"
-The user will be asked to create the new project and choose a workspace for it, for example : C:\Users\xxxx\PycharmProjects\pythonProject1
-The user can also create a python file and start writing the code
-It is upto the user to create a project or just a python file in order to run the python script
-Once the file or project is created the next task is to import the important modules
+Goto File menu and create a "New project".
+The user will be asked to create the new project and choose a workspace for it, for example : C:\Users\xxxx\PycharmProjects\pythonProject1.
+The user can also create a python file and start writing the code.
+It is upto the user to create a project or just a python file in order to run the python script.
+Once the file or project is created the next task is to import the important modules.
 Three modules have been imported in order to work with API and JSON.
 
 
-#How to import the modules in PycHARM
+#How to import the modules in PyCharm
 There are three modules imported to work with API and JSON.
 These are requests,jsonpath,json.
 To import a module goto File in the menu bar and select "Settings" inside it.

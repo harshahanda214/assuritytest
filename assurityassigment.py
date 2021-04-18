@@ -3,20 +3,18 @@ import jsonpath
 import json
 
 # Json file data
-file = open('C:\\Users\\kgaur\\OneDrive\\Desktop\\datajson.json', 'r')
-#reading data from the json file
-data = file.read()
-print(data)
-# parsing json data
-obj = json.loads(data)
-print (str(obj['Name']))
-assert obj['Name'] == 'Carbon credits', "Name is found"
+response = requests.get("https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false")
+print(response.status_code)
+assert response.status_code == 200
+data = response.json()
+print (data['Name'])
+assert data['Name'] == 'Carbon credits', "Name is found"
 AssertionError ('name is not found')
-print (str(obj['CanRelist']))
-assert obj['CanRelist'] == True, "CanRelist is found as True"
+print (str(data['CanRelist']))
+assert data['CanRelist'] == True, "CanRelist is found as True"
 AssertionError ('CanRelist is not found')
-print(str(obj['Promotions']))
-list = obj['Promotions']
+print(str(data['Promotions']))
+list = data['Promotions']
 S = input("add the name are you looking?")
 T = input("add the Description are you looking?")
 for i in range(len(list)):
